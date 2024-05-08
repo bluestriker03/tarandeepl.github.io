@@ -3,66 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>About Me - [Your Name]</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+        /* Basic Reset */
+        body, h1, h2, p, a {
             margin: 0;
             padding: 0;
-            background: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Background and text colors */
+        body {
+            background: #f0f0f0;
             color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+            line-height: 1.6;
             padding: 20px;
-            background: white;
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
         }
+
+        /* Container styling */
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* Header */
         header {
-            background: #333;
-            color: #fff;
-            padding: 20px 0;
             text-align: center;
+            background: #007BFF;
+            color: #ffffff;
+            padding: 40px 0;
         }
+
         header h1 {
-            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 300;
         }
+
+        /* Sections */
         section {
-            margin: 20px 0;
+            margin-top: 20px;
         }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #333333;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #007BFF;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
         footer {
             text-align: center;
-            padding: 10px 0;
-            background: #333;
+            padding: 20px 0;
+            background: #007BFF;
             color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
+
+        /* Links */
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Image styles */
         img {
             max-width: 100%;
             height: auto;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        /* Responsive typography */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1.2rem;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>About Me</h1>
+        <h1>Welcome to My Page!</h1>
     </header>
     <div class="container">
-        <section id="bio">
-            <h2>Biography</h2>
+        <section id="about-me">
+            <h2>About Me</h2>
             <img src="your-photo.jpg" alt="Your Photo">
-            <p>Hello! I’m [Your Name]. I’m currently [your job or position], and I have a passion for [briefly state your professional interests or hobbies]. I have been [a brief summary of your experience or education related to your field]. In my free time, I enjoy [mention some of your hobbies or interests].</p>
+            <p>Hi, I'm [Your Name]! I specialize in [Your Specialization] with an interest in [Your Interest]. I've worked on [describe projects or experiences briefly] and am passionate about [mention any relevant hobbies or interests]. Feel free to connect with me!</p>
         </section>
         <section id="contact">
-            <h2>Contact Information</h2>
-            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-            <p>LinkedIn: <a href="your-linkedin-profile-url">your LinkedIn profile</a></p>
+            <h2>Contact Me</h2>
+            <p>Feel free to drop me an email at <a href="mailto:your.email@example.com">your.email@example.com</a> or connect with me on <a href="your-linkedin-profile-url">LinkedIn</a>.</p>
         </section>
     </div>
     <footer>
-        <p>Copyright &copy; 2024 [Your Name]. All Rights Reserved.</p>
+        <p>Copyright &copy; 2024 [Your Name]. All rights Reserved.</p>
     </footer>
 </body>
 </html>
